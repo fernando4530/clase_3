@@ -1,7 +1,11 @@
-function saludar(){
-    console.log("saludando!");
-
+const capturarEtiqueta = () => {
+    console.log("ingresando a función capturarEtiqueta()");
     const parrafo = document.getElementById("parrafo");
-    parrafo.textContent = "cambiado!";
+    return parrafo;
+}
 
+const saludar = () => {
+    console.log("saludando!");
+    const etiquetaP = capturarEtiqueta();
+    etiquetaP.textContent = "cambiado!";
 }
